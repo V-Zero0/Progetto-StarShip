@@ -1,0 +1,65 @@
+
+# Istruzioni per l'Esecuzione del Progetto Starship
+
+## Descrizione
+Questo progetto è composto da un server (`Server_meteoriti.py`) e un client (`Client_navicella.py`) che comunicano tramite il protocollo UDP.
+Il client visualizza un'interfaccia grafica tramite `Tkinter` e riceve dati dal server riguardanti la posizione dei meteoriti. 
+
+## Requisiti di Sistema
+- Python 3.x
+- Libreria Pillow (PIL) per la gestione delle immagini
+
+
+## Istruzioni per Eseguire il Programma
+
+### 1. **Windows**
+1. Aprire il `Prompt dei comandi` e navigare fino alla cartella contenente i file Python.
+
+2. Installare le librerie necessarie (se non già installate):
+   
+   pip install Pillow
+
+   
+3. Avviare prima il server:
+  
+   python Server_meteoriti.py
+
+
+4. In una nuova finestra del prompt dei comandi, avviare il client:
+   
+   python Client_navicella.py
+  
+
+
+### 2. **Linux/macOS**
+1. Aprire il terminale e navigare fino alla cartella contenente i file.
+
+2. Installa le librerie necessarie (se non già installate):
+   
+   pip install Pillow
+  
+
+3. Avvia il server:
+   
+   python3 Server_meteoriti.py
+  
+
+4. In una nuova finestra o scheda del terminale, avviare il client:
+   
+   python3 Client_navicella.py
+  
+
+
+### 3. **IDE (PyCharm, Visual Studio Code, ecc.)**
+1. Caricare i file nel IDE.
+
+2. Assicurarsi di aver installato la libreria Pillow tramite il terminale o la finestra delle dipendenze del IDE.
+
+3. Eseguire il file `Server_meteoriti.py` per avviare il server.
+
+4. In una nuova esecuzione, avviare il file `Client_navicella.py`.
+
+
+## Note Aggiuntive
+- Assicurarsi che il server sia avviato prima di lanciare il client.
+

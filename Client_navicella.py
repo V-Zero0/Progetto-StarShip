@@ -190,11 +190,11 @@ def avvia_gioco(M):
 
     # Caricamento delle immagini
     navicella_img = Image.open("navicella.png")
-    navicella_img = navicella_img.resize((45, 45), Image.ANTIALIAS)
+    navicella_img = navicella_img.resize((45, 45), Image.Resampling.LANCZOS)
     navicella_img = ImageTk.PhotoImage(navicella_img)
 
     meteorite_img = Image.open("meteorite.png")
-    meteorite_img = meteorite_img.resize((30, 30), Image.ANTIALIAS)
+    meteorite_img = meteorite_img.resize((30, 30), Image.Resampling.LANCZOS)
     meteorite_img = ImageTk.PhotoImage(meteorite_img)
 
     disegna_navicella(canvas, posizione_navicella, posizione_navicella, navicella_img)  # Disegna la navicella iniziale

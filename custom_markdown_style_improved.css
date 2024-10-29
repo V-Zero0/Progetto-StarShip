@@ -1,0 +1,61 @@
+
+/* General page margin for more white space */
+@page {
+    margin: 0.8in;  /* Adds larger margins on all sides */
+}
+
+/* General paragraph style with justified alignment */
+body {
+    font-family: 'Intelo Normale', sans-serif; /* Corrected font name */
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Bold styling for text within the body */
+strong, b {
+    font-family: 'Intelo Grassetto', sans-serif; /* Corrected font name */
+    font-size: 14px;
+}
+
+/* Subtitle styling (sottotitoli) with bold */
+h2 {
+    font-family: 'Intelo Grassetto', sans-serif; /* Corrected font name */
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Title styling (titoli) with bold */
+h1 {
+    font-family: 'Intelo Grassetto', sans-serif; /* Corrected font name */
+    font-size: 19px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+
+/* CSS per mostrare solo il numero di pagina nel piè di pagina */
+@page {
+    margin: 1in;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Nasconde header e altre info, mantenendo solo il numero di pagina */
+.header {
+    display: none;
+}
+
+.footer {
+    text-align: center;
+    font-size: 10pt;
+    content: counter(page);
+}
